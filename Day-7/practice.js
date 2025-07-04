@@ -88,14 +88,10 @@
 // arr.splice( 1, 0, "feb");
 // console.log(arr); // Output: ["jan", "feb", "april", "mar", "may"]
 
-
-
-
 // let i = 1;
 // while (i <= 100) {
 //   if (i >= 50) {
- 
- 
+
 //   break;
 //   }
 //   i++;
@@ -106,15 +102,108 @@
 // let test = arr.filter((modules)=> modules % 2 == 0);
 // console.log(test);
 
+// let i = 23;
+// if( i % 2 == 0){
+//     console.log(" is a even number")
+// }
+// else if ( i % 2 == 1){
+//     console.log(" is a odd number")
+// }
+// else {
+//     console.log(" is not a number")
+// }
 
+// let arr = [ 121,12,,32,4,,56];
+// let remove = arr.filter((find)=> find % 2 == 0);
+// console.log(remove); // Output: [12, 32, 4, 56]
 
-let i = 23;
-if( i % 2 == 0){
-    console.log(" is a even number")
-}
-else if ( i % 2 == 1){
-    console.log(" is a odd number")
-}
-else {
-    console.log(" is not a number")
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr.length)
+
+// let i = 1;
+// do {
+//   if (i >= 50) {
+//     break;
+//   }
+//   console.log(i);
+//   i++;
+// } while (i <= 100);
+
+// const arr = [12,23,34,45,56,];
+// let mul = arr.map ((num)=> num * 2);
+// console.log(mul);
+
+// let evensum = 0;
+// let counteven = 0;
+// let countodd = 0;
+// let oddsum = 0;
+
+// for (let i = 1; i <= 50; i++) {
+//   if (i % 2 == 0) {
+//     evensum += i;
+//     counteven = evensum;
+//   } else if (i % 2 == 1) {
+//     oddsum += i;
+//     countodd = oddsum;
+//   }
+// }
+//  console.log(counteven + " is the sum of even numbers");
+//   console.log(countodd + " is the sum of odd numbers");
+
+// let i = 1;
+// if ( i % 5 ==0){
+//     console.log("Divisible by 5:" + i);
+// }
+// else {
+//     console.log("Not divisible by 5:" + i);
+// }
+
+// for (let i = 1; i <= 100; i++) {
+//   let isPrime = true;
+
+//   // Check if i is prime
+//   if (i <= 1) {
+//     isPrime = false;
+//   } else {
+//     for (let j = 2; j < i; j++) {
+//       if (i % j === 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+//   }
+
+//   let isMultipleOf4 = i % 4 === 0;
+
+//   if (isPrime && isMultipleOf4) {
+//     console.log("Prime and Multiple of 4: " + i);
+//   } else if (isPrime) {
+//     console.log("Prime: " + i);
+//   } else if (isMultipleOf4) {
+//     console.log("Multiple of 4: " + i);
+//   }
+// }
+
+for (let i = 1; i <= 100; i++) {
+  let prime = true;
+
+  if (i <= 1) {
+    prime = false;
+  } else {
+    for (let j = 2; j < i; j++) {
+      if (i % j == 0) {
+        prime = false;
+        break;
+      }
+    }
+  }
+
+  let isMultipleOf4 = i % 4 === 0;
+  if (prime && isMultipleOf4) {
+    console.log("Prime and Multiple of 4: " + i);
+  } else if (prime) {
+    console.log("Prime: " + i);
+  } else if (isMultipleOf4) {
+    console.log("Multiple of 4: " + i);
+  }
 }
