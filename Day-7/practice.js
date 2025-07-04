@@ -102,3 +102,19 @@
 //   console.log(i);
 // }
 
+// let arr = [1, 2, 3, 4, 5];
+// let test = arr.filter((modules)=> modules % 2 == 0);
+// console.log(test);
+
+
+
+let i = 23;
+if( i % 2 == 0){
+    console.log(" is a even number")
+}
+else if ( i % 2 == 1){
+    console.log(" is a odd number")
+}
+else {
+    console.log(" is not a number")
+}
