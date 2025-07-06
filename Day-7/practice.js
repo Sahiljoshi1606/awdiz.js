@@ -184,26 +184,26 @@
 //   }
 // }
 
-for (let i = 1; i <= 100; i++) {
-  let prime = true;
+// for (let i = 1; i <= 100; i++) {
+//   let prime = true;
 
-  if (i <= 1) {
-    prime = false;
-  } else {
-    for (let j = 2; j < i; j++) {
-      if (i % j == 0) {
-        prime = false;
-        break;
-      }
-    }
-  }
+//   if (i <= 1) {
+//     prime = false;
+//   } else {
+//     for (let j = 2; j < i; j++) {
+//       if (i % j == 0) {
+//         prime = false;
+//         break;
+//       }
+//     }
+//   }
 
-  let isMultipleOf4 = i % 4 === 0;
-  if (prime && isMultipleOf4) {
-    console.log("Prime and Multiple of 4: " + i);
-  } else if (prime) {
-    console.log("Prime: " + i);
-  } else if (isMultipleOf4) {
-    console.log("Multiple of 4: " + i);
-  }
-}
+//   let isMultipleOf4 = i % 4 === 0;
+//   if (prime && isMultipleOf4) {
+//     console.log("Prime and Multiple of 4: " + i);
+//   } else if (prime) {
+//     console.log("Prime: " + i);
+//   } else if (isMultipleOf4) {
+//     console.log("Multiple of 4: " + i);
+//   }
+// }
