@@ -146,6 +146,11 @@ for ( i =2 ;  i < 15 ; i++){
 // 12)  Count occurrences of a value in array.
 // Input: [1, 2, 1, 3, 1, 4], Element: 1
 // Output: 3
+let occurrences = [1, 2, 1, 3, 1, 4].reduce((acc, curr) => curr === 1? acc + 1 : acc, 0
+)
+console.log(occurrences)
+
+
 
 // 13)Sum of even numbers using reduce.
 // Input: [1, 2, 3, 4, 5, 6]
@@ -316,6 +321,5 @@ for (let i = 0; i < arr.length-1 ; i++) {
     flag = false;
     break;
   }
-}
 
 console.log(flag); 

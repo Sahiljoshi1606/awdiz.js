@@ -79,7 +79,31 @@
 
 //  }
 
+
+
 // 20. Reverse array using while loop (in-place). 
 // Input: [1, 2, 3, 4] 
 // Output: [4, 3, 2, 1] 
+
+// let arr = [1, 2, 3, 4];
+// let start = 0;
+// let end = arr.length - 1;
+
+// while (start < end) {
+//     // Swap elements
+//     let temp = arr[start];
+//     arr[start] = arr[end];
+//     arr[end] = temp;
+
+//     // Move pointers
+//     start++;
+//     end--;
+// }
+
+
+let occurrences = [1, 2, 1, 3, 1, 4]
+.reduce((acc, curr) => curr === 1? acc + 1 : acc, 0
+)
+console.log(occurrences)
+  
 
