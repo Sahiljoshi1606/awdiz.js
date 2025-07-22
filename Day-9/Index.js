@@ -66,18 +66,18 @@
 // Output: [11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
 
  
-//  for (i = 10 ; i <=50 ; i++){
-//      let prime = true;
-//      for( let num = 2 ; num > i ; i++)
-//         if(i % num == 0 ){
-//             prime = false;
-//             break;
-//         }
-//         if(prime){
-//             console.log(i)
-//         }
+ for (i = 10 ; i <=50 ; i++){
+     let prime = true;
+     for( let num = 2 ; num > i ; i++)
+        if(i % num == 0 ){
+            prime = false;
+            break;
+        }
+        if(prime){
+            console.log(i)
+        }
 
-//  }
+ }
 
 
 
@@ -101,9 +101,9 @@
 // }
 
 
-let occurrences = [1, 2, 1, 3, 1, 4]
-.reduce((acc, curr) => curr === 1? acc + 1 : acc, 0
-)
-console.log(occurrences)
+// let occurrences = [1, 2, 1, 3, 1, 4]
+// .reduce((acc, curr) => curr === 1? acc + 1 : acc, 0
+// )
+// console.log(occurrences)
   
 
